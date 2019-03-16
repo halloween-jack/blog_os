@@ -5,9 +5,13 @@ authors = ["halloween-jack <halloween.jack.dev@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+bootloader = "0.4.0"
 
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[package.metadata.bootimage]
+default-target = "x86_64_blog_os.json"
